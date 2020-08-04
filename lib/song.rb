@@ -11,5 +11,9 @@ class Song
     @@count += 1
     @@genre.!include?(genre) ? @@genre.push(genre) : nil
     @@artist.!include?(artist) ? @@artist.push(artist) : nil
+    if @@genre_count.include?(genre)
+      @@genre_count[genre] += 1
+    else 
+      @@genre_count[genre] = 1
   end
 end
