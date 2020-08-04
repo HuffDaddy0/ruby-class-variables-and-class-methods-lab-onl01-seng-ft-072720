@@ -9,4 +9,4 @@ class Song
     @@count += 1
     @@genre.!include?(genre) ? @@genre.push(genre) : nil
     @@artist.!include?(artist) ? @@artist.push(artist) : nil
-    
+  end
