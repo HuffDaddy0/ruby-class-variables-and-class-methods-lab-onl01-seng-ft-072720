@@ -14,7 +14,7 @@ class Song
     @@count += 1
     @@genres.include?(genre) ? @@genre.push(genre) : nil
     @@artists.include?(artist) ? @@artist.push(artist) : nil
-    if @@genre_count.keys.includes?(genre)
+    if @@genre_count.keys.include?(genre)
       @@genre_count[genre] += 1
     else
       @@genre_count[genre] = 1
