@@ -20,4 +20,22 @@ class Song
       @@genre_count[genre] = 1
     end
   end
+
+  def genre_count
+    @@genre_count
+  end
+  def artist_count
+    @@artist_count
+  end
+  def count
+    @@count
+  end
+  def artists
+    @@artists
+  end
+  def genres
+    @@genres
+  end
+    
+  end
 end
