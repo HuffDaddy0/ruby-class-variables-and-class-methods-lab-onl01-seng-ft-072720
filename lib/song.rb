@@ -12,12 +12,17 @@ class Song
     @artist = artist
     @genre = genre
     @@count += 1
-    @@genres.push(genre)
-    @@artists.push(artist)
+    @@genres.push(genre).uniq
+    @@artists.push(artist).uniq
     if @@genre_count.keys.include?(genre)
       @@genre_count[genre] += 1
     else
       @@genre_count[genre] = 1
+    end
+    if @@artist_count.keys.include?(artist)
+      @@artist_count[artist] += 1
+    else
+      @@artist_count[artist] = 1
     end
   end
 
