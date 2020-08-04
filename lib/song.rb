@@ -12,8 +12,8 @@ class Song
     @artist = artist
     @genre = genre
     @@count += 1
-    @@genres.include?(genre) ? @@genre.push(genre) : nil
-    @@artists.include?(artist) ? @@artist.push(artist) : nil
+    @@genres.push(genre)
+    @@artists.push(artist)
     if @@genre_count.keys.include?(genre)
       @@genre_count[genre] += 1
     else
