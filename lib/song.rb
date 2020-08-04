@@ -10,3 +10,4 @@ class Song
     @@genre.!include?(genre) ? @@genre.push(genre) : nil
     @@artist.!include?(artist) ? @@artist.push(artist) : nil
   end
+end
