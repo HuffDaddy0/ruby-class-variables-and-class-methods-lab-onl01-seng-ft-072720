@@ -37,5 +37,4 @@ class Song
     @@genres
   end
 
-  end
 end
